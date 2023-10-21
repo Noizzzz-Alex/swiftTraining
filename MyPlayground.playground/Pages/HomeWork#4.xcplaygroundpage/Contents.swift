@@ -48,16 +48,14 @@ class Pizzeria{
         pizzaList.append(pizza)
     }
     
-    func displayAllPizzaVoid(list: [Pizza]){    //Первый вариант написания метода
-        for pizza in list { print(pizza.pizzaType) }
-    }
-    
-    func displayAllPizzaArray(list: [Pizza]) -> [Pizza]?{   //Второй вариант написания метода
-        var tempArray: [Pizza] = []
-        guard !list.isEmpty else { return nil }
-        tempArray = list.map{$0}
-        return tempArray
-    }
+    func displayAllPizzaVoid() {
+            for pizza in pizzaList {
+                print("Pizza : \(pizza.pizzaType), " +
+                      "Dough : \(pizza.doughType), " +
+                      "Supplements: \(pizza.supplements), " +
+                      "Cost: \(pizza.cost)")
+            }
+        }
 }
 
 
@@ -73,6 +71,6 @@ pizzeriaMario.addNewPizza(pizza: pizzaPepperoni)
 pizzeriaMario.addNewPizza(pizza: pizzaHawaiian)
 pizzeriaMario.addNewPizza(pizza: pizzaCarbonara)
 
-pizzeriaMario.displayAllPizzaVoid(list: pizzeriaMario.getPizzaList())
+pizzeriaMario.displayAllPizzaVoid()
 
 //: [Next](@next)

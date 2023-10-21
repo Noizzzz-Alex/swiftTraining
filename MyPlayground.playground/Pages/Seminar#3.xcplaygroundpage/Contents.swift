@@ -124,7 +124,7 @@ func sumArray(arr1: [Int]) -> [Int]? {
     guard arr1.count == 4 else { return nil }
     return [arr1[0], arr1[1] + arr1[2], arr1[3]].sorted(by: >)
 }
-print(sumArray(arr1: a))
+//print(sumArray(arr1: a))
 
 
 // Создайте массив, который состоит из всех целых чисел от 1 до 50
