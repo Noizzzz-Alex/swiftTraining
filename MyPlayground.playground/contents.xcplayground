@@ -6,5 +6,10 @@
         <page name='HomeWork#2'/>
         <page name='Seminar#3'/>
         <page name='HomeWork#3'/>
+        <page name='HomeWork#4'/>
+        <page name='Seminar#4'/>
+        <page name='Training'/>
+        <page name='Seminar#5'/>
+        <page name='HomeWork#5'/>
     </pages>
 </playground>
